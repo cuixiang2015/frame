@@ -24,7 +24,7 @@ public class UserController {
 	
 	@RequestMapping("/all")
 	public String helloUser(Model model) {
-		System.out.println(User.HH);
+		System.out.println(User.HH+"aa");
 		List<User> list = userService.findAllUser();
 		model.addAttribute("users", list);
 		return "/user_list";
